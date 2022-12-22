@@ -20,7 +20,7 @@ jobs:
               github-token: ${{ secrets.PAT_TOKEN }}
               script: |
                 github.rest.actions.createWorkflowDispatch({
-                  owner: 'pkking',
+                  owner: 'opensourceways',
                   repo: 'copr_docker',
                   workflow_id: 'frontend-publish.yml',
                   ref: 'main',
